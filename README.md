@@ -34,8 +34,9 @@ if (example1 == 11) {
 } else {
     alert('La variable ne vaut pas 11');
 }
-
+```
 ---
+```
 
 if (example2 == 20 && example2 == example1) {
     //alert('[condition if ( ... && ... )]');
