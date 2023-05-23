@@ -2,7 +2,7 @@
 
 ### 1) Variables
 ```
-let a;
+let a, variable1, variable2;
 let b = 3;
 let c = 10;
 let d = [];
