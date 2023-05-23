@@ -6,6 +6,10 @@ let a, variable1, variable2;
 let b = 3;
 let c = 10;
 let d = [];
+let client = {
+    nom: 'Florentin',
+    panier: 0
+};
 let f = function ( variable1, variable2, ... ) { ... }
 ```
 ### 2) Table
