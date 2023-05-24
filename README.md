@@ -1,5 +1,3 @@
-# Cheat-Sheet-Javascript
----
 ### 1) Variables
 ```
 let a, variable1, variable2;
@@ -10,7 +8,9 @@ let client = {
     nom: 'Florentin',
     panier: 0
 };
-let f = function ( variable1, variable2, ... ) { ... }
+let f = function ( variable1, variable2, ... ) { ... };
+var g;
+const h;
 ```
 ---
 ### 2) Table
@@ -68,3 +68,51 @@ switch (example1) {
 }
 ```
 ---
+### 4) Functions
+```
+function functionName(params) {
+    ...
+}
+functionName(params);
+
+function functionName2(params1, params2, params3) {
+    ...
+}
+functionName2(params1, params2, params3);
+```
+---
+### 5) DOM
+
+Dans votre fichier.html :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+    <div class="container">
+        <h1>Test avec document.getElement...</h1>
+        <p class="test" id="target"></p>
+        <p class="target2"></p>
+        <p class="target3 test2"></p>
+        <p class="target4"></p>
+        <p id="target5"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+```
+Dans votre main.js :
+```
+const text = document.getElementById("target");
+text.innerHTML = "Le prix total du panier est de 100 euros";
+
+const text2 = document.querySelector(".container > .cible2")
+text2.innerHTML = `"Le prix total du panier est de 150 euros`;
+
+const text3 = document.getElementsByClassName("cible3")[0];
+// console.log(text3);
+text3.innerHTML = `Le prix total du panier est de 200 euros`;
+
+const text4 = document.getElementsByTagName("p");
+// console.log(text4);
+```
