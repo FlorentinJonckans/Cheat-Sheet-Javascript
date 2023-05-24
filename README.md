@@ -1,5 +1,5 @@
 # Cheat-Sheet-Javascript
-
+---
 ### 1) Variables
 ```
 let a, variable1, variable2;
@@ -12,8 +12,8 @@ let client = {
 };
 let f = function ( variable1, variable2, ... ) { ... }
 ```
+---
 ### 2) Table
-
 ```
 let table = [];
 
@@ -23,7 +23,7 @@ let element3 = table.push('element3');
 
 console.log(table, table[0], table.lenght);
 ```
-
+---
 ### 3) Conditions
 
 #### 3.1) "If" Condition
@@ -38,9 +38,6 @@ if (example1 == 11) {
 } else {
     alert('La variable ne vaut pas 11');
 }
-```
----
-```
 
 if (example2 == 20 && example2 == example1) {
     //alert('[condition if ( ... && ... )]');
@@ -50,7 +47,7 @@ if (example2 == 20 || example2 == example1) {
     //alert('[condition if ( ... || ... )]');
 }
 ```
-
+---
 #### 3.2) "Switch" Condition
 
 ```
@@ -70,3 +67,4 @@ switch (example1) {
         alert('La variable "example1" ne vaut ni 0 ni 1');
 }
 ```
+---
